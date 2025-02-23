@@ -16,11 +16,11 @@ function Header() {
         },
     ]
   return (
-    <div className='p-5 pb-3 pl-10 border-b-[4px] border-gray-200 flex items-center justify-between'>
+    <div className='pt-4 pl-3 pb-1 border-b-[4px] border-gray-200 flex items-center justify-between'>
       <div className='flex gap-24 items-center'>
-        <Image src='/logo.png' 
-        width={70}
-        height={70}
+        <Image src='/glide-logo.jpeg' 
+        width={110}
+        height={110}
         alt='logo'
         />
         <div className="flex gap-6 items-center">

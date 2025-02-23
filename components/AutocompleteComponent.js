@@ -12,7 +12,6 @@ const AutocompleteComponent = ({ onSelect }) => {
       return;
     }
 
-    // Ensure the 'places' library is loaded
     autocompleteRef.current = new window.google.maps.places.Autocomplete(inputRef.current);
 
     autocompleteRef.current.addListener("place_changed", () => {

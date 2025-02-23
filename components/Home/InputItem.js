@@ -16,7 +16,7 @@ function InputItem({ type }) {
   }, [type]);
 
   const getLatAndLng = (place, type) => {
-    const placeId = place.value.place_id;
+    const placeId =  place.value.place_id;
     const service = new window.google.maps.places.PlacesService(
       document.createElement("div")
     );
