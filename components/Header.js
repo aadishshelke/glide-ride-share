@@ -23,16 +23,15 @@ function Header() {
         height={70}
         alt='logo'
         />
-        <div  className='flex gap-6 items-center'>
-            {headerMenu.map((item)=>(
-                <div className='flex gap-2 items-center'>
-                    <Image src={item.icon}
-                    width={17} height={17} 
-                    alt='car logo' />
-                    <h2 className='text-[14px] font-bold'>{item.name}</h2>
-                </div>
-            ))}
-        </div>
+        <div className="flex gap-6 items-center">
+  {headerMenu.map((item) => (
+    <div key={item.id} className="flex gap-2 items-center">
+      <Image src={item.icon} width={17} height={17} alt={item.name} />
+      <h2 className="text-[14px] font-bold">{item.name}</h2>
+    </div>
+  ))}
+</div>
+
       </div>
       <UserButton />
     </div>
