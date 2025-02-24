@@ -4,6 +4,7 @@ import InputItem from "./InputItem";
 import SourceContext from "../../context/SourceContext";
 import DestinationContext from "../../context/DestinationContext";
 import CarListOptions from "../CarListOptions"
+import { toast } from 'react-toastify';
 
 function SearchSection() {
   const sourceContext = useContext(SourceContext);
@@ -31,16 +32,17 @@ function SearchSection() {
     )
     // console.log(dist*0.000621374);
     setDistance(dist*0.000621374*50.60934);
+    toast.info("Rides Available!");
   }
   
   return (
     <div>
     <div className="p-2 md:p-6 border-[2px] rounded-xl">
-      <p className="text-[20px] font-bold">Ride with <span className="text-[#5277de]">glide</span></p>
+      <p className="text-[20px] font-bold">Get a <span className="text-[#5277de]">glide</span></p>
       <InputItem type="source" />
       <InputItem type="destination" />
       <button 
-      className="p-3 bg-black w-full mt-5 text-white rounded-lg bg-[#5277de] text-semibold"
+      className="p-3 w-full mt-5 text-white rounded-lg bg-[#5277de] text-semibold"
       onClick={()=>calculateDistance()}
       >
         Search

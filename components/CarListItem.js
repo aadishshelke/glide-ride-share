@@ -5,12 +5,12 @@ import { HiUser } from "react-icons/hi2";
 function CarListItem({car,distance}) {
   return (
     <div>
-      <div className='flex items-center justify-between mt-5'>
+      <div className='flex items-center justify-between '>
         <div className='flex items-center gap-5'>
-        {/* <Image src={car.image}
-        width={100}
-        height={100}
-        /> */}
+        <Image src={car.image}
+        width={90}
+        height={90}
+        />
         <div>
             <h2 className='font-semibold text-[18px] flex gap-3 items-center'>{car.name}
 

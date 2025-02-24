@@ -5,7 +5,7 @@ export const carListData = [
         seat:3,
         desc:"Quick and Cheap rides",
         amount:1.0,
-        image:""
+        image:"/tuktuk.png"
     },
     {
         id:2,
@@ -13,7 +13,7 @@ export const carListData = [
         seat:4,
         desc:"Affordable, everyday rides",
         amount:1.2,
-        image:""
+        image:"/sedan.png"
     },
     {
         id:3,
@@ -21,7 +21,7 @@ export const carListData = [
         seat:4,
         desc:"Newer cars with extra legroom",
         amount:1.5,
-        image:""
+        image:"/sport-car.png"
     },
     {
         id:4,
@@ -29,7 +29,7 @@ export const carListData = [
         seat:6,
         desc:"Affordable rides for groups of upto 6",
         amount:1.8,
-        image:""
+        image:"/hatchback.png"
     },
     
 ]

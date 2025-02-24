@@ -1,5 +1,7 @@
+"use client"
 import { SignIn } from '@clerk/nextjs'
 import Image from 'next/image'
+import { toast } from 'react-toastify'
 
 export default function Page() {
   return (
@@ -13,7 +15,9 @@ export default function Page() {
         alt="Background Image"
         />
         <div className='absolute top-20 left-10'>
-            <SignIn />
+            <SignIn 
+            onSignIn={() => toast.success("Signed in successfully")}
+            />
         </div>
         
     </div>
