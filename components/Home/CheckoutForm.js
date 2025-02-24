@@ -29,7 +29,7 @@ function CheckoutForm({amount}) {
             clientSecret:secretKey,
             elements,
             confirmParams:{
-                return_url:"http://localhost:3000/"
+                return_url:"https://glide-ride-share-mocha.vercel.app/"
             }
         })
         if (error) {

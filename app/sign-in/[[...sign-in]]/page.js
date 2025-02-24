@@ -8,7 +8,7 @@ export default function Page() {
     <>
     <div>
         <Image 
-        src='/bg3.jpg' 
+        src='/loginPage4.png' 
         width={1000}
         height={1000}
         className='object-contain h-full w-full'
